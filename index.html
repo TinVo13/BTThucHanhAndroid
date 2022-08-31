@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="text-align: center;">
+    <script>
+        const lb = document.createElement("label");
+        lb.innerHTML = "A:";
+        document.body.appendChild(lb)
+
+        const txta = document.createElement("input", typeof("txt"))
+        document.body.appendChild(txta);
+
+        document.body.appendChild(document.createElement("br"));
+        document.body.appendChild(document.createElement("br"));
+
+        const lb1 = document.createElement("label");
+        lb1.innerHTML = "B:";
+        document.body.appendChild(lb1)
+
+        var txtb = document.createElement("input", typeof("txt"))
+        document.body.appendChild(txtb);
+
+        document.body.appendChild(document.createElement("br"));
+        document.body.appendChild(document.createElement("br"));
+
+        const btn = document.createElement("button");
+        btn.innerHTML = "Sum";
+        document.body.appendChild(btn);
+
+
+        btn.onclick = function() {
+            var a = parseInt(txta.value);
+            var b = parseInt(txtb.value);
+            document.getElementById("demo").innerHTML = a + b;
+        };
+    </script>
+    <p id="demo">ket qua?</p>
+</body>
+
+</html>
